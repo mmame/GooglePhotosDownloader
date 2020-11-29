@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooglePhotosDownloader", "GooglePhotosDownloader\GooglePhotosDownloader.csproj", "{17650264-0791-4473-B977-B791A5150A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17650264-0791-4473-B977-B791A5150A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17650264-0791-4473-B977-B791A5150A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17650264-0791-4473-B977-B791A5150A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17650264-0791-4473-B977-B791A5150A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9951C32-4AA4-4D59-B30E-7B4F9C6BBA0E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GooglePhotosDownloader": {
+      "commandName": "Project",
+      "commandLineArgs": "targetdir \"G:\\Google Fotos Angela\" username angela.menti@gmail.com"
+    }
+  }
+}

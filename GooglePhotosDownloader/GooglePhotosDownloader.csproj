@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.44.1" />
+    <PackageReference Include="Google.Apis.Core" Version="1.44.1" />
+    <PackageReference Include="Google.Apis.Oauth2.v2" Version="1.44.1.1869" />
+  </ItemGroup>
+
+</Project>
