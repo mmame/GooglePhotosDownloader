@@ -18,6 +18,7 @@ namespace GooglePhotosDownloader
 
         static string targetRootDirectory = string.Empty;
         static string googleUserName = string.Empty;
+        static bool reauthenticate = false;
 
         enum ExitCode : int
         {
@@ -39,7 +40,7 @@ namespace GooglePhotosDownloader
                 var parallelOptions = new ParallelOptions() { MaxDegreeOfParallelism = 20 };
 
                 GooglePhotosDownloader googlePhotosDownloader = new GooglePhotosDownloader(googleUserName, ClientID, ClientSecret, targetRootDirectory);
-                googlePhotosDownloader.Authenticate(ClientSecrets);
+                googlePhotosDownloader.Authenticate(ClientSecrets, reauthenticate);
 
                 MediaList mediaListResponse = null;
                 do
@@ -102,6 +103,9 @@ namespace GooglePhotosDownloader
                                 break;
                             case "username":
                                 state = 2;
+                                break;
+                            case "reauthenticate":
+                                reauthenticate = true;
                                 break;
                             default:
                                 return false;

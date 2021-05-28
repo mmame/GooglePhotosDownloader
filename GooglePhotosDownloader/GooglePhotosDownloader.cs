@@ -28,7 +28,7 @@ namespace GooglePhotosDownloader
             PageSize = 100;
         }
 
-        public void Authenticate(string clientSecrets)
+        public void Authenticate(string clientSecrets, bool reauthenticate)
         {
             string[] scopes = { "https://www.googleapis.com/auth/photoslibrary.readonly" };
 
@@ -40,9 +40,13 @@ namespace GooglePhotosDownloader
                     GoogleUserName,
                     CancellationToken.None,
                     new FileDataStore("GooglePhotosDownloader", false)).Result;
+
+                if (reauthenticate)
+                {
+                    GoogleWebAuthorizationBroker.ReauthorizeAsync(UserCredential, CancellationToken.None).Wait();
+                }
             }
         }
-
 
         public MediaList GetMediaList(string nextPageToken)
         {
