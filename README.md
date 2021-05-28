@@ -8,6 +8,7 @@ There exist several cloud solutions which aim to fill that gap. But the solution
 
 So I created this tiny utility to download all Google Photos to a local directory - which of course could refer to a folder synced with Google Drive  ;-)
 
+```
 usage: GooglePhotosDownloader -targetdir <directory> -username <google user name> [options]
 arguments:
         -targetdir                      Directory where the downloaded files will be stored to
@@ -15,3 +16,4 @@ arguments:
         -reauthenticate                 add this argument when you receive a 401 error
   
   Example: GooglePhotosDownloader.exe targetdir "G:\Google Fotos" username myemail@gmail.com
+```
