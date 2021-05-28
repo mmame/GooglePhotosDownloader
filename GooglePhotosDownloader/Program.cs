@@ -146,6 +146,7 @@ namespace GooglePhotosDownloader
             Console.WriteLine("arguments:");
             Console.WriteLine("\t-targetdir\t\t\tDirectory where the downloaded files will be stored to");
             Console.WriteLine("\t-username\t\t\tgoogle username");
+            Console.WriteLine("\t-reauthenticate\t\t\tadd this argument when you receive a 401 error");
         }
     }
 }
