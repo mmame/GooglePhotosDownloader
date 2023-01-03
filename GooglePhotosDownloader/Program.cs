@@ -98,13 +98,13 @@ namespace GooglePhotosDownloader
                     case 0:
                         switch (arg.ToLower())
                         {
-                            case "targetdir":
+                            case "-targetdir":
                                 state = 1;
                                 break;
-                            case "username":
+                            case "-username":
                                 state = 2;
                                 break;
-                            case "reauthenticate":
+                            case "-reauthenticate":
                                 reauthenticate = true;
                                 break;
                             default:
